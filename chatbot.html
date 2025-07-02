@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EMR Chatbot Assistant</title>
+  <link rel="stylesheet" href="chatbot/assets/css/chatbot.css">
+</head>
+<body>
+
+<!-- Floating Chat Button -->
+<div class="chatbot-icon" onclick="toggleChat()">💬 Chat with AI</div>
+
+<!-- Chat Box -->
+<div class="chatbot-box" id="chatbotBox">
+  <div class="chat-header">
+    <strong>AI Chatbot</strong>
+    <div class="language-select">
+      🌍
+      <select id="language" onchange="changeLanguage()">
+        <option value="en">EN</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+    </div>
+    <button class="close-btn" onclick="toggleChat()">✖</button>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="chat-message bot">👋 Hello! How can I assist you today?</div>
+    <div class="chat-message system">💡 Tip: Type "medicine" or "दवा" to see available medicines.</div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="chatbot/assets/js/chatbot.js"></script>
+</body>
+</html>
