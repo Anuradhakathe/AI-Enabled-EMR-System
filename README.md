@@ -45,4 +45,14 @@ We conducted field research by visiting local hospitals to observe real-world is
 - **AI Integration:** OpenAI API (for chatbot and NLP)
 
 ## 📁 Folder Structure
+/EMR-System/
+├── frontend/
+│ └── React UI components
+├── backend/
+│ └── Laravel controllers, routes, views
+├── database/
+│ └── SQL dump and schema
+├── public/
+│ └── Assets (images, styles, scripts)
+└── README.md
 
